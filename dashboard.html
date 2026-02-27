@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dashboard</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+<nav class="navbar navbar-dark bg-primary">
+  <div class="container-fluid">
+    <span class="navbar-brand">📊 Sales Dashboard</span>
+  </div>
+</nav>
+
+<div class="container mt-4">
+
+<select id="sheetSelect" class="form-select mb-3"></select>
+
+<div class="row text-center">
+  <div class="col-md-3 card-box">ยอดขายทั้งหมด <h4 id="totalSales"></h4></div>
+  <div class="col-md-3 card-box">Ads Cost <h4 id="totalAds"></h4></div>
+  <div class="col-md-3 card-box">Impressions <h4 id="totalImp"></h4></div>
+  <div class="col-md-3 card-box">Unit Sale <h4 id="totalUnit"></h4></div>
+</div>
+
+<canvas id="mainChart" class="mt-4"></canvas>
+
+<h5 class="mt-5">🏆 Ranking Brand</h5>
+<ul id="rankingList" class="list-group"></ul>
+
+</div>
+
+<script src="js/app.js"></script>
+</body>
+</html>
